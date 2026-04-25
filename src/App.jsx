@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import BlogPostsPage from './pages/BlogPostsPage';
 import IndividualPostPage from './pages/IndividualPostPage';
 import ContactPage from './pages/ContactPage';
+import Login from './Components/login/Login';
 
 
 function App() {
