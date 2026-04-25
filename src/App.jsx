@@ -13,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<BlogPostsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/login" element={<Login />} />
+
         <Route path="/post/:id" element={<IndividualPostPage />} />
       </Routes>
     </div>
