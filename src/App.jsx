@@ -16,10 +16,10 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<BlogPostsPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogPostsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/pages" element={<HomePage />} />
         <Route path="/post/:id" element={<IndividualPostPage />} />
       </Routes>
       <Footer />
