@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { useAuth } from '../authWrapper/AuthContext';
 
 function Login() {
-  const {login} = useAuth();
+  const { login } = useAuth();
   
   const [userData, setUserData] = useState({
     username: '',
