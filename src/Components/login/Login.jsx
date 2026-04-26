@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Login() {
-  const {} = useAuth();
+  const {login} = useAuth();
   
   const [userData, setUserData] = useState({
     username: '',
@@ -10,7 +10,8 @@ function Login() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(userData);
+    //console.log(userData);
+    login(userData.username);
   };
 
   return (
