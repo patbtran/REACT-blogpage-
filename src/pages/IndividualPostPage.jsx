@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import Header from '../Components/Common/Header';
 import BlogPost from '../Components/blog/BlogPost';
-import Footer from '../Components/Common/Footer';
 
 function IndividualPostPage() {
     const { id } = useParams();
@@ -35,7 +33,6 @@ function IndividualPostPage() {
 
     return (
         <div>
-            <Header />
             <main className="p-6">
               <div className="mb-4">
                 <Link to="/" className="text-blue-600"></Link>
@@ -54,7 +51,6 @@ function IndividualPostPage() {
                 />
               )}
             </main>
-            <Footer />
         </div>
     );
 }

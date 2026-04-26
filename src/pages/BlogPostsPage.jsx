@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Header from '../Components/Common/Header';
-import Footer from '../Components/Common/Footer';
 
 function BlogPostsPage() {
   const [posts, setPosts] = useState([]);
@@ -23,7 +21,6 @@ function BlogPostsPage() {
 
   return (
     <div>
-      <Header />
       <main className="p-6">
         <h1 className="text-3xl font-bold mb-4">Welcome to my Page!</h1>
         <p className="text-lg text-gray-700">This is a post from the author, P Tran. This is the meeting point for communications via blog posts! Enjoy!</p>
@@ -45,7 +42,6 @@ function BlogPostsPage() {
           ))}
         </ul>
       </main>
-      <Footer />
     </div>
   );
 }

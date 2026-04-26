@@ -4,6 +4,8 @@ import BlogPostsPage from './pages/BlogPostsPage';
 import IndividualPostPage from './pages/IndividualPostPage';
 import ContactPage from './pages/ContactPage';
 import Login from './Components/login/Login';
+import Header from './Components/Common/Header';
+import Footer from './Components/Common/Footer';
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <Routes>
         <Route path="/" element={<BlogPostsPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -18,6 +21,7 @@ function App() {
 
         <Route path="/post/:id" element={<IndividualPostPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
