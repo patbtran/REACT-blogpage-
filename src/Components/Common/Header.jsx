@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
+import { useUsername } from "../authWrapper/AuthContext";
+
+
 function Header() {
+    const username = useUsername();
     return (
         <div className="bg-sky-600 text-white p-4">
             <h1 className="text-4xl">Dog widda Blog</h1>
@@ -12,7 +16,8 @@ function Header() {
                         <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link to="/login">Login</Link>
+                        
+                        {username ? <p>Logout</p> : <Link to="/login">Login</Link>}
                     </li>
                 </ul>
             </nav>

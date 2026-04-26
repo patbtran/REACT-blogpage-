@@ -15,15 +15,15 @@ function App() {
 
   return (
     <div>
-      <Header />
       <AuthProvider>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogPostsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/post/:id" element={<IndividualPostPage />} />
-      </Routes>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<BlogPostsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/post/:id" element={<IndividualPostPage />} />
+        </Routes>
       </AuthProvider>
       <Footer />
     </div>
