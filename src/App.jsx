@@ -24,8 +24,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/post/:id" element={<IndividualPostPage />} />
       </Routes>
-      <Footer />
       </AuthProvider>
+      <Footer />
     </div>
   );
 }

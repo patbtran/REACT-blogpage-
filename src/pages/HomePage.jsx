@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../Components/authWrapper/AuthContext';
 
 
 const HomePage = () => {
@@ -38,23 +38,7 @@ const HomePage = () => {
         flexWrap: 'wrap',
         justifyContent: 'center'
       }}>
-        <Link to="/login">
-          <button style={{
-            padding: '10px 20px',
-            fontSize: '1rem',
-            backgroundColor: '#5d28a7',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            transition: 'background-color 0.3s'
-          }}
-          onMouseOver={(e) => e.target.style.backgroundColor = '#9a71c6'}
-          onMouseOut={(e) => e.target.style.backgroundColor = '#5d28a7'}
-          >
-            Login
-          </button>
-        </Link>
+
         <Link to="/blog">
           <button style={{
             padding: '10px 20px',
