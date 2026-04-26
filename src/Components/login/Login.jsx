@@ -6,13 +6,13 @@ function Login() {
     password: '',
   });
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
     e.preventDefault();
     console.log(userData);
   };
 
   return (
-    <div className=" max-w-96 m-12">
+    <div className="max-w-96 m-12">
       <form className="flex flex-col gap-4" onSubmit={onSubmit}>
       <input placeholder="Username"
        className= "border"
