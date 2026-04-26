@@ -20,7 +20,7 @@ function ContactPage() {
 
   return (
     <div className="contact-box">
-      <h1>Contact Me!</h1>
+      <h1>Contact us, we'll reach out!</h1>
 
       <form onSubmit={handleSubmit}>
         <label>

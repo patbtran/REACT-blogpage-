@@ -22,8 +22,8 @@ function BlogPostsPage() {
   return (
     <div>
       <main className="p-6">
-        <h1 className="text-3xl font-bold mb-4">Welcome to my Page!</h1>
-        <p className="text-lg text-gray-700">This is a post from the author, P Tran. This is the meeting point for communications via blog posts! Enjoy!</p>
+        <h1 className="text-3xl font-bold mb-4">Welcome to our Page!</h1>
+        <p className="text-lg text-gray-700">This is a post from the authors, P Tran and K Esmeralda. This is the meeting point for communications via blog posts! Enjoy!</p>
         <h1 className="text-3xl font-bold mb-4">Blog Posts</h1>
         <ul className="space-y-4">
 
