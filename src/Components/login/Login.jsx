@@ -6,23 +6,25 @@ function Login() {
     password: '',
   });
 
-  const handleSubmit = (e) => {
+  const onSubmit = () => {
     e.preventDefault();
-    console.log('Login:', userData);
+    console.log(userData);
   };
 
   return (
-    <div className="flex flex-col max-w-96 gap-4 m-12">
+    <div className=" max-w-96 m-12">
+      <form className="flex flex-col gap-4" onSubmit={onSubmit}>
       <input placeholder="Username"
        className= "border"
-       value={userData.username} onChange={e => setUserData({...userData, username: e.target.value})} />
+       value={userData.username} onChange={(e) => setUserData({...userData, username: e.target.value})} />
 
       <input placeholder="Password"
        className= "border"
        type="password"
-       value={userData.password} onChange={e => setUserData({...userData, password: e.target.value})} />
+       value={userData.password} onChange={(e) => setUserData({...userData, password: e.target.value})} />
 
-      <button type="submit" onClick={handleSubmit}>Login</button>
+      <button type="submit" className="bg-amber-400 w-fit px-8 py-2 rounded-2xl text-white" onClick={onSubmit}>Login</button>
+      </form>
     </div>
   );
 }
