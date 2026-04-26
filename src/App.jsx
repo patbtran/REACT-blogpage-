@@ -7,6 +7,7 @@ import Login from './Components/login/Login';
 import Header from './Components/Common/Header';
 import Footer from './Components/Common/Footer';
 import HomePage from './pages/HomePage';
+import { AuthProvider } from './Components/authWrapper/AuthProvider';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <Header />
+      <AuthProvider>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<BlogPostsPage />} />
@@ -23,6 +25,7 @@ function App() {
         <Route path="/post/:id" element={<IndividualPostPage />} />
       </Routes>
       <Footer />
+      </AuthProvider>
     </div>
   );
 }
